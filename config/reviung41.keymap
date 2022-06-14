@@ -25,12 +25,12 @@
 // |  TAB |  Q   |  W   |  E    |  R    |  T  |   |  Y  |  U    |  I    |  O   |  P   |   BKSP   |
 // | CTRL |GUI(A)|ALT(S)|SHFT(D)|CTRL(F)|  G  |   |  H  |CTRL(J)|SHFT(K)|ALT(L)|GUI(;)|   '      |
 // | SHFT |  Z   |  X   |  C    |  V    |  B  |   |  N  |  M    |  ,    |  .   |  /   | SHFT(RET)|
-//                   | ALT | LWR(BKSP) | GUI | RSE(SPC)  | ALT |
+//                   | ALT | LWR(SPC) | GUI | RSE(SPC)  | ALT |
                         bindings = <
    &kp TAB   &kp Q     &kp W     &kp E      &kp R      &kp T &kp Y &kp U       &kp I      &kp O     &kp P        &kp BKSP
    &kp LCTRL &mt LGUI A &mt LALT S &mt LSHFT D &mt LCTRL F &kp G &kp H &mt RCTRL J  &mt RSHFT K &mt RALT L &mt RGUI SEMI &kp SQT
    &kp LSHFT &kp Z     &kp X     &kp C      &kp V      &kp B &kp N &kp M       &kp COMMA  &kp DOT   &kp FSLH     &mt RSHFT RET
-                        &kp LALT  &lt LOWER BKSP &kp LGUI &lt RAISE SPACE &kp RALT
+                        &kp LALT  &lt LOWER SPACE &kp LGUI &lt RAISE SPACE &kp RALT
                         >;
                 };
 

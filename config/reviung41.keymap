@@ -16,6 +16,7 @@
 
 &mt {
     flavor = "tap-preferred";
+    tapping-term-ms = <150>
 };
 
 / {
@@ -27,12 +28,12 @@
 // |  TAB |  Q   |  W   |  E    |  R    |  T  |   |  Y  |  U    |  I    |  O   |  P   |   BKSP   |
 // | CTRL |GUI(A)|ALT(S)|CTRL(D)|SHFT(F)|  G  |   |  H  |SHFT(J)|CTRL(K)|ALT(L)|GUI(;)|   '      |
 // | SHFT |  Z   |  X   |  C    |  V    |  B  |   |  N  |  M    |  ,    |  .   |  /   | SHFT(RET)|
-//                   | ESC | LWR(SPC) | TAB | RSE(SPC)  | ALT |
+//                   | ESC | LWR(BKSP) | TAB | RSE(SPC)  | ALT |
                         bindings = <
    &kp TAB   &kp Q     &kp W     &kp E      &kp R      &kp T &kp Y &kp U       &kp I      &kp O     &kp P        &kp BKSP
    &kp LCTRL &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G &kp H &mt RSHFT J  &mt RCTRL K &mt RALT L &mt RGUI SEMI &kp SQT
    &kp LSHFT &kp Z     &kp X     &kp C      &kp V      &kp B &kp N &kp M       &kp COMMA  &kp DOT   &kp FSLH     &mt RSHFT RET
-                        &kp ESC  &lt LOWER SPACE &kp TAB &lt RAISE SPACE &kp RALT
+                        &kp ESC  &lt LOWER BKSP &kp TAB &lt RAISE SPACE &kp RALT
                         >;
                 };
 
